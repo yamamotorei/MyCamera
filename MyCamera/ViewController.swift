@@ -29,6 +29,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func shareButtonAction(_ sender: Any) {
+        if let shareImage = pictureImage.image {
+            let shareItems = [shareImage]
+            let controller = UIActivityViewController(activityItems: shareItems, applicationActivities: nil)
+            controller.popoverPresentationController?.sourceView = view
+            present(controller, animated: true, completion: nil)
+        }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

@@ -22,6 +22,8 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>カメラにアクセス</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>フォトライブラリに保存</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
